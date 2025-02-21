@@ -1,0 +1,38 @@
+//REG.NO:EB3/61584/22
+#include<iostream>
+#include <string.h>
+using namespace std;
+int main()
+{
+	string name;
+	float sales,commission;
+	cout<<"Enter name of sales agent:"<<endl;
+	cin>>name;
+	cout<<"Enter total sales:"<<endl;
+	cin>> sales;
+	
+	
+	
+	//calculate commission earned
+	if(sales>=4000)
+	{
+		commission =0.15*sales;
+		cout<<"Your commission earn is:"<<commission<<endl;
+	}
+	if(sales>=3000&&sales<=3999)
+	{
+		commission =0.12*sales;
+		cout<<"Your commission earn is:"<<commission<<endl;
+	}
+	if(sales>=2000&&sales<=2999)
+	{
+		commission =0.09*sales;
+		cout<<"Your commission earn is:"<<commission<<endl;
+	}
+	if(sales<2000)
+	{
+		commission=0.06*sales;
+		cout<<"Your commission earned is:"<<commission<<endl;
+	}
+	return 0;
+}
